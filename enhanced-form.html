@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates advanced HTML5 features including lists, tables, media, and a fully validated form.</p>
+  </header>
+
+  <section>
+    <h2>📋 Features List</h2>
+    <ul>
+      <li>Semantic HTML5 structure</li>
+      <li>Embedded audio and video</li>
+      <li>Accessible and validated form</li>
+      <li>Use of tables and lists for clarity</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Student Info Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ADM</th>
+          <th>Name</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2345</td>
+          <td>kevin ndede</td>
+          <td>4S</td>
+        </tr>
+        <tr>
+          <td>3456</td>
+          <td>Alex muna</td>
+          <td>3R</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="C:\Users\KCSE 2025\Desktop\WEB\Busy Signal - Watch Me (Official Audio).m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="640" height="360" controls muted autoplay loop>
+      <source src="https://www.pexels.com/video/ceramic-vase-on-the-ground-7294101/" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <section>
+    <h2>Contact Form</h2>
+    <form action="/submit" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" minlength="3"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+          <option value="">--Select Country--</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Tanzania">Tanzania</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="South Africa">South Africa</option>
+        </select><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" placeholder="Min 5 alphanumeric"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters"><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" required minlength="6"><br><br>
+
+        <label for="referral">Referral Code:</label><br>
+        <input type="text" id="referral" name="referral" readonly value="HTML5-2025"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 HTML5 Assignment by Kevin Ndede</p>
+  </footer>
+
+</body>
+</html>
